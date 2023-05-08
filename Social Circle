@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@200&display=swap" rel="stylesheet">
+
+	<!-------->
+
+	<style>
+		* {
+			margin: 0;
+			padding: 0;
+			-webkit-box-sizing: border-box;
+			box-sizing: border-box;
+		}
+
+
+		.navMenu {
+			font-family: 'Montserrat', sans-serif;
+			padding: 8px;
+			text-align: center;
+			margin: 7px auto;
+			width: fit-content;
+		}
+
+		.navMenu a {
+			color: #272727;
+			text-decoration: none;
+			text-transform: uppercase;
+			display: inline-block;
+			padding: 6px;
+		}
+
+		.background {
+			background-color: #ffffff;
+		}
+
+		.border {
+			border: 1px solid #2b393d;
+
+		}
+
+		.navMenu a:hover {
+
+			color: #ca9677;
+		}
+	</style>
+</head>
+
+<body>
+
+	<nav class="navMenu  border">
+		<a id="website" onclick="navigate(this.id)" href="#"> <i class="fa-thin fa-house"></i> Website</a>
+		<a id="inbox" onclick="navigate(this.id)" href="#"> <i class="fa-thin fa-envelope"></i> Inbox</a>
+		<a id="projects" onclick="navigate(this.id)" href="#"> <i class="fa-thin fa-square-kanban"></i> Projects</a>
+		<a id="tasks" onclick="navigate(this.id)" href="#"> <i class="fa-thin fa-list-check"></i> Tasks</a>
+		<a id="knowledge" onclick="navigate(this.id)" href="#"> <i class="fa-thin fa-lightbulb"></i> Knowledge</a>
+		<a id="notes" onclick="navigate(this.id)" href="#"> <i class="fa-thin fa-note"></i> Notes</a>
+		<a id="resourses" onclick="navigate(this.id)" href="#"> <i class="fa-thin fa-circle-info"></i> Resourses</a>
+		<a id="facebook" onclick="navigate(this.id)" href="#"> <i class="fa-brands fa-facebook-f"></i> Facebook</a>
+		<a id="instagram" onclick="navigate(this.id)" href="#"> <i class="fa-brands fa-instagram"></i> Instagram</a>
+		<a id="pinterest" onclick="navigate(this.id)" href="#"> <i class="fa-brands fa-pinterest-p"></i> Pinterest</a>
+
+
+	</nav>
+
+
+	<script>
+
+		let direction = "horizontal";
+		if (direction === "vertical") {
+			document.head.insertAdjacentHTML("beforeend", `<style>.navMenu a {display: block; text-align:left; margin:7px} i{width:15px; margin-right:5px} .navMenu{margin:3px}</style>`)
+		}
+
+
+		function navigate(id) {
+
+			if (id == 'home')
+				window.open("https://socialcircledigitalmarketing.com/", '_blank').focus();
+			else if (id == "inbox")
+				window.open("https://mail.google.com/mail/u/0/#inbox", '_blank').focus();
+			else if (id == "projects")
+				window.open("https://example.com", '_blank').focus();
+			else if (id == "tasks")
+				window.open("https://example.com", '_blank').focus();
+			else if (id == "knowledge")
+				window.open("https://example.com", '_blank').focus();
+			else if (id == "notes")
+				window.open("https://example.com", '_blank').focus();
+			else if (id == "resourses")
+				window.open("https://example.com3", '_blank').focus();
+			else if (id == "facebook")
+				window.open("https://www.facebook.com/socialcircledigitalmarketing", '_blank').focus();
+			else if (id == "instagram")
+				window.open("https://www.instagram.com/socialcircledigitalmarketing/", '_blank').focus();
+			else if (id == "pinterest")
+				window.open("https://www.pinterest.com/socialcircledigitalmarketing/", '_blank').focus();
+
+		}
+	</script>
+
+
+</body>
+
+</html>
