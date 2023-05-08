@@ -4,7 +4,6 @@
 <head>
 <!-- Font Awesome -->
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css">
-
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@200&display=swap" rel="stylesheet">
@@ -22,7 +21,7 @@
 
 		.navMenu {
 			font-family: 'Montserrat', sans-serif;
-			padding: 8px;
+			padding: 6px;
 			text-align: center;
 			margin: 7px auto;
 			width: fit-content;
@@ -62,9 +61,6 @@
 		<a id="knowledge" onclick="navigate(this.id)" href="#"> <i class="fa-thin fa-lightbulb"></i> Knowledge</a>
 		<a id="notes" onclick="navigate(this.id)" href="#"> <i class="fa-thin fa-note"></i> Notes</a>
 		<a id="resourses" onclick="navigate(this.id)" href="#"> <i class="fa-thin fa-circle-info"></i> Resourses</a>
-		<a id="facebook" onclick="navigate(this.id)" href="#"> <i class="fa-brands fa-facebook-f"></i> Facebook</a>
-		<a id="instagram" onclick="navigate(this.id)" href="#"> <i class="fa-brands fa-instagram"></i> Instagram</a>
-		<a id="pinterest" onclick="navigate(this.id)" href="#"> <i class="fa-brands fa-pinterest-p"></i> Pinterest</a>
 
 
 	</nav>
@@ -80,7 +76,7 @@
 
 		function navigate(id) {
 
-			if (id == 'home')
+			if (id == 'website')
 				window.open("https://socialcircledigitalmarketing.com/", '_blank').focus();
 			else if (id == "inbox")
 				window.open("https://mail.google.com/mail/u/0/#inbox", '_blank').focus();
@@ -94,12 +90,7 @@
 				window.open("https://example.com", '_blank').focus();
 			else if (id == "resourses")
 				window.open("https://example.com3", '_blank').focus();
-			else if (id == "facebook")
-				window.open("https://www.facebook.com/socialcircledigitalmarketing", '_blank').focus();
-			else if (id == "instagram")
-				window.open("https://www.instagram.com/socialcircledigitalmarketing/", '_blank').focus();
-			else if (id == "pinterest")
-				window.open("https://www.pinterest.com/socialcircledigitalmarketing/", '_blank').focus();
+		
 
 		}
 	</script>
